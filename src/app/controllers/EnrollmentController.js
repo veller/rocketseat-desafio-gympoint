@@ -163,6 +163,139 @@ class EnrollmentController {
 
   async update(req, res) {
     return res.status(200).json({ ok: true });
+    const endDate = addMonths(parseISO(req.body.start_date), plan.duration);
+
+    // calcula o valor total a ser pago
+    const price = plan.duration * plan.price;
+
+    // cria a matrícula
+    const enrollment = await Enrollment.create({
+      student_id: req.body.student_id,
+      plan_id: req.body.plan_id,
+      start_date: req.body.start_date,
+      end_date: endDate,
+      price
+    });
+
+    return res.status(200).json(enrollment);
+  }
+
+  async update(req, res) {
+    return res.status(200).json({ ok: true });
+    const endDate = addMonths(parseISO(req.body.start_date), plan.duration);
+
+    // calcula o valor total a ser pago
+    const price = plan.duration * plan.price;
+
+    // cria a matrícula
+    const enrollment = await Enrollment.create({
+      student_id: req.body.student_id,
+      plan_id: req.body.plan_id,
+      start_date: req.body.start_date,
+      end_date: endDate,
+      price
+    });
+
+    return res.status(200).json(enrollment);
+  }
+
+  async update(req, res) {
+    return res.status(200).json({ ok: true });
+    const endDate = addMonths(parseISO(req.body.start_date), plan.duration);
+
+    // calcula o valor total a ser pago
+    const price = plan.duration * plan.price;
+
+    // cria a matrícula
+    const enrollment = await Enrollment.create({
+      student_id: req.body.student_id,
+      plan_id: req.body.plan_id,
+      start_date: req.body.start_date,
+      end_date: endDate,
+      price
+    });
+
+    return res.status(200).json(enrollment);
+  }
+
+  async update(req, res) {
+    return res.status(200).json({ ok: true });
+    const endDate = addMonths(parseISO(req.body.start_date), plan.duration);
+
+    // calcula o valor total a ser pago
+    const price = plan.duration * plan.price;
+
+    // cria a matrícula
+    const enrollment = await Enrollment.create({
+      student_id: req.body.student_id,
+      plan_id: req.body.plan_id,
+      start_date: req.body.start_date,
+      end_date: endDate,
+      price
+    });
+
+    return res.status(200).json(enrollment);
+  }
+
+  async update(req, res) {
+    return res.status(200).json({ ok: true });
+    const endDate = addMonths(parseISO(req.body.start_date), plan.duration);
+
+    // calcula o valor total a ser pago
+    const price = plan.duration * plan.price;
+
+    // cria a matrícula
+    const enrollment = await Enrollment.create({
+      student_id: req.body.student_id,
+      plan_id: req.body.plan_id,
+      start_date: req.body.start_date,
+      end_date: endDate,
+      price
+    });
+
+    return res.status(200).json(enrollment);
+  }
+
+  async update(req, res) {
+    return res.status(200).json({ ok: true });
+    const endDate = addMonths(parseISO(req.body.start_date), plan.duration);
+
+    // calcula o valor total a ser pago
+    const price = plan.duration * plan.price;
+
+    // cria a matrícula
+    const enrollment = await Enrollment.create({
+      student_id: req.body.student_id,
+      plan_id: req.body.plan_id,
+      start_date: req.body.start_date,
+      end_date: endDate,
+      price
+    });
+
+    return res.status(200).json(enrollment);
+  }
+
+  async update(req, res) {
+    return res.status(200).json({ ok: true });
+    const endDate = addMonths(parseISO(req.body.start_date), plan.duration);
+
+    // calcula o valor total a ser pago
+    const price = plan.duration * plan.price;
+
+    // cria a matrícula
+    const enrollment = await Enrollment.create({
+      student_id: req.body.student_id,
+      plan_id: req.body.plan_id,
+      start_date: req.body.start_date,
+      end_date: endDate,
+      price
+    });
+
+    return res.status(200).json(enrollment);
+  }
+
+  async update(req, res) {
+    return res.status(200).json({ ok: true });
   }
 
   async delete(req, res) {
